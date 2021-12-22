@@ -12,7 +12,6 @@ public class TestController {
 	@Value("${some.value}")
 	private String myValue;
 	
-	@RefreshScope
 	@GetMapping(path="/myValue")
 	public String myValue() {
 		return this.myValue;
